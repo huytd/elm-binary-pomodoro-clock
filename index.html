@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+         /* you can style your program here */
+         html {
+             background: #333;
+             font-family: monospace;
+             font-size: 16px;
+             color: #fff;
+         }
+
+         .container {
+             display: flex;
+             flex-direction: column;
+         }
+
+         .numbers-group {
+             width: auto;
+             height: 100px;
+             display: flex;
+             flex-direction: row;
+             margin: 0 auto;
+             flex-wrap: wrap;
+         }
+
+         .number-block {
+             width: 50px;
+             height: 100px;
+             display: flex;
+             flex-direction: row;
+             margin: 8px;
+         }
+         
+         .bits-group ul {
+             display: flex;
+             flex-direction: column;
+             width: 25px;
+             height: 100px;
+             margin: 0;
+             padding: 0;
+             list-style: none;
+         }
+
+         .bit-dots {
+             margin: 5px;
+             width: 15px;
+             height: 15px;
+             content: " ";
+             background: #282828;
+             border-radius: 50%;
+         }
+
+         .bit-dots.on {
+             background: #fff;
+         }
+
+         .time-string {
+             flex-basis: 100%;
+             text-align: center;
+         }
+
+         input {
+             font-family: monospace;
+             font-size: 16px;
+             border: none;
+             background: transparent;
+             width: 80%;
+             color: #FFF;
+         }
+
+         .command-box::before {
+             content: "$ ";
+             font-weight: bold;
+         }
+        </style>
+    </head>
+    <body class="bg-indigo-darkest text-white p-5">
+        <main></main>
+        <script src="./index.js"></script>
+    </body>
+</html>
